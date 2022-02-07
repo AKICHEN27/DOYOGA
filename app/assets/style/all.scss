@@ -1,0 +1,26 @@
+// bs5
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// base
+@import "./base/_base.scss";
+@import "./base/_mixin.scss";
+
+// components
+@import './components/_buttons.scss';
+@import './components/_swiper.scss';
+
+
+
+// utilities
+@import './utilities/_background.scss';
+@import './utilities/_images.scss';
+@import './utilities/_shape.scss';
+@import './utilities/_spacing.scss';
+@import './utilities/_hover.scss';
+
+
+// page
+@import './layout/index.scss';
+@import './layout/_layout.scss';
