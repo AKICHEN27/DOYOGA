@@ -1,10 +1,62 @@
----
-title: 瑜珈空間 - DOYOGA
-layout: ./app/layout.ejs
-engine: ejs
-current: surroundings
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>瑜珈空間 - DOYOGA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="header bg-success py-4">
+      <div class="container">
+        <div class="div d-flex align-items-center justify-content-between">
+          <a href="index.html"><img
+              src="./assets/images/DOYOGA-logo.png"
+              class="logo" alt="logo"></a>
+          <ul class="nav-link">
+            <li class="mt-2"><a href="course.html" class="text-dark btn-hover">課程介紹</a></li>
+            <li class="mx-4 mt-3"><a href="surroundings.html" class="text-dark btn-hover">瑜珈空間</a></li>
+            <li class="mt-3"><a href="curriculum.html" class="text-dark btn-hover">當月課表</a></li>
+            <li class="mt-3"><a href="reservation.html" class="text-dark btn-hover">立即預約</a></li>
+            <li class="mt-3"><a href="contact.html" class="text-dark btn-hover">聯絡我們</a></li>
+          </ul>
+          <ul class="nav-item">
+            <li><a href="course.html" class="text-dark btn-hover">課程介紹</a></li>
+            <li class="mx-4"><a href="surroundings.html" class="text-dark btn-hover">瑜珈空間</a></li>
+            <li><a href="curriculum.html" class="text-dark btn-hover">當月課表</a></li>
+          </ul>
+          <div class="contact-link">
+            <a href="reservation.html" class="btn-outline">立即預約</a>
+            <a href="contact.html" class="btn-outline ms-4">聯絡我們</a>
+          </div>
+          <div class="menu">
+            <a href="javascript:;"><span class="material-icons-outlined fs-1">menu</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="fixed-item position-fixed">
+        <ul class="social-item fs-2 text-center">
+          <li><a href="#" class="hvr-float"><i class="fab fa-facebook fixed-icon"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram fixed-icon my-2"></i></li>
+          <li><a href="#"><i class="fab fa-line fixed-icon"></i></a></li>
+        </ul>
+      </div>
+    </header>
+    
+    
 <main class="surroundings pt-5">
   <div class="container">
     <h2 class="text-primary text-center fs-2 fw-bolder mb-5">瑜珈空間</h2>
@@ -144,3 +196,64 @@ current: surroundings
       </div>
     </div>
 </main>
+
+    <footer class="footer pt-4 pb-5 bg-primary">
+      <div class="border-bottom border-white pb-4">
+        <div class="container">
+          <div class="align-items-center row flex-column flex-md-row justify-content-md-between">
+            <div class="col-12 col-lg-8 mb-3 mb-lg-0">
+              <h2 class="fs-2 text-light">現在訂閱，獲得課程優惠碼！</h2>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="input-group col-12 col-lg-4">
+                <input type="mail" class="form-control input-placeholder-primary col-9 py-2 fs-5" placeholder="輸入您的電子信箱"
+                  aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-secondary text-white fs-5 col-3 py-2" type="button" id="button-addon2">訂閱</button>
+              </div>
+            </div>           
+            
+          </div>
+        </div>      
+      </div> 
+        <div class="container">
+          <div class="d-flex justify-content-between pt-4 pb-2">
+            <div class="div">
+              <a href="index.html"><img src="./assets/images/DOYOGA.png" alt="logo" class="logo btn-a"></a>
+            </div>                        
+            <ul class="d-flex">
+                <li><a href="#"><i class="fab fa-facebook fs-4 text-light btn-a"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fs-4 text-light ms-2 btn-a"></i></li>
+                <li><a href="#"><i class="fab fa-line fs-4 text-light ms-2 btn-a"></i></a></li>
+            </ul>            
+          </div>
+          <div class="row flex-column flex-md-row justify-content-md-center align-items-end">
+            <div class="col-12 col-md-4">
+              <ul class="">
+                <li class="mb-3">
+                  <a class="text-light" href="./course.html">課程介紹</a>
+                </li>
+                <li class="mb-3">
+                  <a class="text-light" href="./environment.html">瑜珈空間</a>
+                </li>
+                <li class="mb-3 mb-md-0">
+                  <a class="text-light" href="./schedule.html">當月課表</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 text-md-center">
+              <p class="text-light">© 2021. All Rights Reserved.</p>
+            </div>
+            <div class="col-12 col-md-4"></div>
+          </div>               
+        </div>
+        
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
